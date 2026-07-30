@@ -106,3 +106,7 @@ Output columns include all original columns plus:
 
 - `prediction`
 - `confidence`
+
+### Time/Budget used
+
+Considering brainstorm + implementation + recording retries to keep as short as possible, the whole assessment took me almost 4 hours.
