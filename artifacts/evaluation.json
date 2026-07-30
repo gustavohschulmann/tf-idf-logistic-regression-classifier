@@ -1,0 +1,166 @@
+{
+  "split": {
+    "random_state": 42,
+    "validation_fraction": 0.2,
+    "stratified": true,
+    "train_rows": 320,
+    "validation_rows": 80
+  },
+  "primary_metric": "macro_f1",
+  "safety_metric": "fraud_recall",
+  "selected_candidate": "balanced",
+  "candidates": {
+    "balanced": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "fraud_precision": 1.0,
+      "fraud_recall": 1.0,
+      "fraud_f1": 1.0,
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          18,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          32
+        ]
+      ],
+      "classification_report": {
+        "account-access": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "transaction-dispute": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 18.0
+        },
+        "fraud-report": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 10.0
+        },
+        "general": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 32.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 80.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 80.0
+        }
+      },
+      "cross_validation_macro_f1_mean": 1.0,
+      "cross_validation_macro_f1_std": 0.0,
+      "cross_validation_fraud_recall_mean": 1.0,
+      "cross_validation_fraud_recall_std": 0.0
+    },
+    "unweighted": {
+      "accuracy": 0.975,
+      "macro_f1": 0.9646464646464646,
+      "fraud_precision": 1.0,
+      "fraud_recall": 0.8,
+      "fraud_f1": 0.8888888888888888,
+      "confusion_matrix": [
+        [
+          20,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          18,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          8,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          32
+        ]
+      ],
+      "classification_report": {
+        "account-access": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 20.0
+        },
+        "transaction-dispute": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 18.0
+        },
+        "fraud-report": {
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1-score": 0.8888888888888888,
+          "support": 10.0
+        },
+        "general": {
+          "precision": 0.9411764705882353,
+          "recall": 1.0,
+          "f1-score": 0.9696969696969697,
+          "support": 32.0
+        },
+        "accuracy": 0.975,
+        "macro avg": {
+          "precision": 0.9852941176470589,
+          "recall": 0.95,
+          "f1-score": 0.9646464646464646,
+          "support": 80.0
+        },
+        "weighted avg": {
+          "precision": 0.9764705882352942,
+          "recall": 0.975,
+          "f1-score": 0.973989898989899,
+          "support": 80.0
+        }
+      },
+      "cross_validation_macro_f1_mean": 0.9658804784575004,
+      "cross_validation_macro_f1_std": 0.02489585184710078,
+      "cross_validation_fraud_recall_mean": 0.82,
+      "cross_validation_fraud_recall_std": 0.11661903789690603
+    }
+  }
+}
